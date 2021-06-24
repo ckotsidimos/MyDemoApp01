@@ -28,7 +28,7 @@ resource "azurerm_app_service" "main" {
 
   site_config {
     app_command_line = ""
-    linux_fx_version = "DOCKER|appsvcsample/python-helloworld:latest"
+    linux_fx_version = "DOCKER|ckotsidimos/testapp1:latest"
   }
 
   app_settings = {
