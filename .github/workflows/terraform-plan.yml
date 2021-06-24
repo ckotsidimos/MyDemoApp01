@@ -20,7 +20,7 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
 
-      - name: Terraform Init
+      - name: -chdir=../Terraform Init
         run: terraform init
 
       - name: Terraform Format
