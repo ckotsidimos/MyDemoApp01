@@ -23,8 +23,5 @@ jobs:
       - name: -chdir=../Terraform Init
         run: terraform -chdir=./Terraform init
 
-      - name: Terraform Format
-        run: terraform -chdir=./Terraform fmt -check
-
       - name: Terraform Plan
         run: terraform -chdir=./Terraform plan
