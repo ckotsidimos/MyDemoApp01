@@ -21,10 +21,10 @@ jobs:
         uses: hashicorp/setup-terraform@v1
 
       - name: -chdir=../Terraform Init
-        run: terraform init
+        run: terraform -chdir=../Terraform init
 
       - name: Terraform Format
-        run: terraform fmt -check
+        run: terraform -chdir=../Terraform fmt -check
 
       - name: Terraform Plan
-        run: terraform plan
+        run: terraform -chdir=../Terraform plan
