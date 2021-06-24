@@ -22,6 +22,9 @@ jobs:
 
       - name: Terraform Init
         run: terraform -chdir=./Terraform init
+        
+      - name: Terraform Plan
+        run: terraform -chdir=./Terraform plan
 
       - name: Terraform Apply
         run: terraform -chdir=./Terraform apply -auto-approve
